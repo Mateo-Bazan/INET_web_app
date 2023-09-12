@@ -11,12 +11,16 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('orientacion', function (Blueprint $table) {
+        Schema::create('ubicacion', function (Blueprint $table) {
             $table->id();
-            $table->string("sector");
-            $table->string("titulo");
-            $table->unsignedBigInteger('id_clase');
-            $table->foreign('id_clase')->references('id')->on('clase')->onDelete('cascade');
+            $table->float('latitud');
+            $table->float('longitud');
+            $table->String('direccion');
+
+            $table->unsignedBigInteger('id_jurisdiccion');
+            $table->foreign('id_jurisdiccion')->references('id')->on('jurisdicciones')->onDelete('cascade');
+
+
             $table->timestamps();
         });
     }
@@ -26,6 +30,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('orientacion');
+        Schema::dropIfExists('ubicacion');
     }
 };
