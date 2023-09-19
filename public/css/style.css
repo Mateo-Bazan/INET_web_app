@@ -2,9 +2,9 @@
     padding: 50px 3vh;
 }
 .buscador{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    margin-top: 50px;
+    place-items: center;
 }
 .buscador-text{
     width: 500px;
@@ -15,8 +15,21 @@
     width: 150px;
 }
 .contenedor-mapa-result{
+    display: grid;
     margin-top: 50px;
+    place-items: center;
 }
 .contenedor-mapa{
     height: 620px;
+}
+.row-buscador {
+    display: flex;
+    align-items: flex-start;
+}
+.center-buscador{
+    display: grid;
+    place-items: center;
+}
+.script-mapa{
+    position: absolute;    
 }
