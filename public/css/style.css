@@ -35,61 +35,37 @@
 }
 
 /*MENU HAMBURGUESA*/
-.menu-hamburguesa {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 30px;
-    height: 30px;
-    background-color: #fff;
-  }
-  
-  .menu-hamburguesa-boton {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-  }
-  
-  .menu-hamburguesa-boton i {
-    font-size: 16px;
-  }
-  
-  .menu-hamburguesa-desplegable {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #fff;
-    display: none;
-    width: 100%;
-    height: 100%;
-    max-height: 0;
-    transition: max-height 0.5s;
-  }
-  
-  .menu-hamburguesa-desplegable ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .menu-hamburguesa-desplegable ul li {
-    display: block;
-    padding: 10px;
-    cursor: pointer;
-  }
-  
-  .menu-hamburguesa-desplegable ul li a {
-    color: #000;
-  }
-  
-  .menu-hamburguesa-desplegable.mostrado {
-    max-height: 100%;
-  }
-  .menu-hamburguesa-desplegable {
-    display: none;
-  }
+.active{
+  transform: translate(-600px);
+}
+.opacity{
+  background-color: rgba(0red, 0, 0, 0.5);
+  transition: all .5s ease;
+}
+.menu-hamburguesa-desplegable{
+  background-color: rgb(42, 42,42);
+  box-shadow: 2px 0px 5px 2px rgb(66, 66, 66);
+  width: 400px;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all .5s ease;
+}
+.menu-hamburguesa-desplegable ul{
+  padding: 100px 0px 20px 0px;
+  list-style: none;
+}
+.menu-hamburguesa-desplegable ul li{
+  color: white;
+  display: block;
+  font-size: 25px;
+  text-decoration: none;
+  padding: 10px 50px;
+  cursor: pointer;
+}
+.menu-hamburguesa-desplegable ul li:hover{
+  background-color: rgb(228, 228,228);
+  color: rgb(42, 42,42);
+}
   /*MENU HAMBURGUESA*/
