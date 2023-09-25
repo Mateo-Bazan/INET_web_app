@@ -21,8 +21,8 @@ cerrarMenu.addEventListener('click', () => {
 // Para que cuando se haga click fuera del menu este se cierre
 document.body.addEventListener('click', (e) => {
     if (!menu.contains(e.target) && !iconoMenu.contains(e.target)) {
-      // Si el clic se encuentra fuera del menú y el icono, oculta el menú
       menu.classList.remove('activo');
       document.body.classList.remove('fondo-opaco');
+      mapaContainer.classList.remove('opaco');
     }
 });
