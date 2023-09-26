@@ -1,7 +1,7 @@
 //COLOCAR MAPA EN PANTALLA
 const mapContainer = document.getElementById('contenedor-mapa');
 
-const map = L.map(mapContainer).setView([-35.65662, -63.75682], 13);
+const map = L.map(mapContainer).setView([-35.65662, -63.75682], 14);
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 5,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'

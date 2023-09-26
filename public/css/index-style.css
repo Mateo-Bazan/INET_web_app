@@ -1,6 +1,5 @@
-* {
-  margin: 0;
-}
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
+
 /*INDEX STYLES*/
 .contenedor {
     padding: 50px 3vh;
@@ -13,10 +12,11 @@
 .buscador-text{
     width: 500px;
     height: 38px;
-    margin-right: 5px;
+    padding-right: 5px;
 }
 .btn-buscar{
     width: 150px;
+    padding-right: 0;
 }
 .contenedor-mapa-result{
     display: grid;
@@ -34,20 +34,31 @@
 .center-buscador{
     display: grid;
     place-items: center;
+    margin-right: 0;
+    padding-right: 0;
+    padding: 0px;
 }
 .script-mapa{
     position: absolute;    
 }
 
+/*INET LOGO INDEX*/
+.inicio-title {
+  margin: 0;
+  font-size: 120px;
+  font-family: Dongle;
+  color: white;
+}
+
 /*MENU HAMBURGUESA*/
 header {
   background-color: #0E68AF;
-  margin-bottom: 30px;
-  padding: 15px;
 }
+
 .menu-hamburguesa {
-  padding-top: 5px;
-  padding-bottom: 5px;
+  display: grid;
+  grid-template-columns: 1fr; /* Una sola columna */
+  justify-items: center;
   position: relative;
   width: 5%;
   color: white;
@@ -105,3 +116,4 @@ header {
   opacity: 0.5;
   transition: opacity 0.5s ease;
 }
+
