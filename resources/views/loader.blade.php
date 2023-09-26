@@ -22,5 +22,6 @@
 <div class="title-container">
     <p class="inicio-subtitle">ubicados en argentina</p>
 </div>
+<script src="{{ asset('/js/loader.js') }}"></script>
 </body>
 </html>

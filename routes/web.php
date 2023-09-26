@@ -18,7 +18,7 @@ Route::get('/', function () {
 });
 
 Route::get('/inicio', function () {
-    return view('inicio');
+    return view('loader');
 });
 
 Route::get('/cercanos', function () {

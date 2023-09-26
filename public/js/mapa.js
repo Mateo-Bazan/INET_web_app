@@ -3,14 +3,14 @@ const mapContainer = document.getElementById('contenedor-mapa');
 
 const map = L.map(mapContainer).setView([-35.65662, -63.75682], 13);
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
+    maxZoom: 5,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 //COLOCAR MAPA EN PANTALLA
 
 //marcador lindo
-var marker = L.marker([-35.6479966,-63.7537031]).addTo(map);
-marker.bindPopup("<b>We Are Here</b><br>PD: Mate.B <3").openPopup();
+// var marker = L.marker([-35.6479966,-63.7537031]).addTo(map);
+// marker.bindPopup("<b>We Are Here</b><br>PD: Mate.B <3").openPopup();
 //marcador lindo
 
 //Elementos para la busqueda
