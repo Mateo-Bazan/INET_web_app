@@ -55,13 +55,18 @@ header {
   background-color: #0E68AF;
 }
 
+.header-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px; 
+  margin: 0 auto;
+  padding: 0 25px;
+}
 .menu-hamburguesa {
   display: grid;
-  grid-template-columns: 1fr; /* Una sola columna */
   justify-items: center;
-  position: relative;
   width: 5%;
-  color: white;
 }
 
 .menu-hamburguesa-boton {
@@ -117,3 +122,6 @@ header {
   transition: opacity 0.5s ease;
 }
 
+* {
+  padding-right: 0;
+}

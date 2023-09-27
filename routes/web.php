@@ -17,7 +17,7 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/inicio', function () {
+Route::get('/loader', function () {
     return view('loader');
 });
 

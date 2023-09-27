@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-    <title>Geolocalizacion</title>
+    <title>inet</title>
     <link rel="stylesheet" href="{{ asset('/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
     <link rel="stylesheet" href="{{ asset('/css/index-style.css') }}">
@@ -12,29 +12,32 @@
 <!--PARTE DE JOEL-->
  <!-- MENU HAMBURGUESA --> 
 <header>   
-          <!-- ICONO -->
-  <div class="menu-hamburguesa">
-    <a href="#" class="menu-hamburguesa-boton">
-      <i class="fas fa-bars"></i>
-      <img src="{{ asset('images/hamburguer-menu/whiteMenu.png') }}" alt="icono-menu" id="hamburguesa" class="icon icon-tabler icon-tabler-menu-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round"></img>
-    </a>     
-          <!-- FIN ICONO -->
-        <div class="menu-hamburguesa-desplegable" id="menu">
-            <!-- Icono de cruz -->
-             <span class="cerrar-menu" id="cerrarMenu">&times;</span> 
-            <!-- FIN Icono de cruz -->
-            <!-- Datos Menu -->
-          <ul>
-            <li><a href="#">Tema</a></li>
-            <li><a href="#">Albergues</a></li>
-            <li><a href="#">Acerca De</a></li>
-            <li><a href="#">Ayuda</a></li>
-            <li><a href="#">Salir</a></li>
-          </ul>
-            <!-- FIN Datos Menu -->
-        </div>
+  <div class="header-container">
+    <div class="menu-hamburguesa">
+      <a href="#" class="menu-hamburguesa-boton">
+        <i class="fas fa-bars"></i>
+        <img src="{{ asset('images/hamburguer-menu/whiteMenu.png') }}" alt="icono-menu" id="hamburguesa" class="icon icon-tabler icon-tabler-menu-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round"></img>
+      </a>     
+            <!-- FIN ICONO -->
+          <div class="menu-hamburguesa-desplegable" id="menu">
+              <!-- Icono de cruz -->
+              <span class="cerrar-menu" id="cerrarMenu">&times;</span> 
+              <!-- FIN Icono de cruz -->
+              <!-- Datos Menu -->
+            <ul>
+              <li><a href="#">Tema</a></li>
+              <li><a href="#">Albergues</a></li>
+              <li><a href="#">Acerca De</a></li>
+              <li><a href="#">Ayuda</a></li>
+              <li><a href="#">Salir</a></li>
+            </ul>
+              <!-- FIN Datos Menu -->
+          </div>
+    </div>
+      <p class="inicio-title">inet</p> 
   </div>
-    <p class="inicio-title">inet</p> 
+          <!-- ICONO -->
+  
 </header>
 <!-- MENU HAMBURGUESA -->
 <!--PARTE DE JOEL-->
