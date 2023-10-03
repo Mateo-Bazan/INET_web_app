@@ -22,15 +22,16 @@
           <div class="menu-hamburguesa-desplegable" id="menu">
               <!-- Icono de cruz -->
               <span class="cerrar-menu" id="cerrarMenu">&times;</span> 
-              <!-- FIN Icono de cruz -->
+              <!-- FIN Icono de cruz --> 
               <!-- Datos Menu -->
-            <ul>
-              <li><a href="#">Tema</a></li>
-              <li><a href="#">Albergues</a></li>
-              <li><a href="#">Acerca De</a></li>
-              <li><a href="#">Ayuda</a></li>
-              <li><a href="#">Salir</a></li>
-            </ul>
+                  <p class="titulo-desplegable">inet</p>
+                <ul>
+                  <li><a href="#">Tema</a></li>
+                  <li><a href="#">Albergues</a></li>
+                  <li><a href="#">Acerca De</a></li>
+                  <li><a href="#">Ayuda</a></li>
+                  <li><a href="#">Salir</a></li>
+                </ul>
               <!-- FIN Datos Menu -->
           </div>
     </div>
@@ -60,7 +61,7 @@
              </div>
         </div> 
         <ul id="ubicaciones" class="col-0 list-group"></ul>
-        <div class="col-12">
+        <div class="col-11|">
             <div id="contenedor-mapa" class="contenedor-mapa"></div>
         </div>
      </div>

@@ -35,7 +35,6 @@
     display: grid;
     place-items: center;
     margin-right: 0;
-    padding-right: 0;
     padding: 0px;
 }
 .script-mapa{
@@ -73,7 +72,18 @@ header {
   cursor: pointer;
 }
 
+.titulo-desplegable {
+  margin: 0;
+  font-size: 120px;
+  font-family: Dongle;
+  color: #0E68AF;
+  padding: 10px 15px;
+  border-bottom: 1px black solid;
+}
+
 .menu-hamburguesa-desplegable {
+  border: 1px;
+  border-color: black;
   position: fixed;
   top: 0;
   left: -250px; 
@@ -89,12 +99,15 @@ header {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  padding-top: 35px;
 }
 
 .menu-hamburguesa-desplegable ul li {
   padding: 10px 15px;
   font-size: 18px;
   color: #333333;
+  border-top: 1px;
+  border-bottom: 1px;
 }
 
 .fondo-opaco {
