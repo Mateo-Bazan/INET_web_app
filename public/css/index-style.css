@@ -62,6 +62,7 @@ header {
   margin: 0 auto;
   padding: 0 25px;
 }
+
 .menu-hamburguesa {
   display: grid;
   justify-items: center;
@@ -77,7 +78,7 @@ header {
   font-size: 120px;
   font-family: Dongle;
   color: #0E68AF;
-  padding: 10px 15px;
+  padding: 10px 50px;
   border-bottom: 1px black solid;
 }
 
@@ -104,7 +105,8 @@ header {
 
 .menu-hamburguesa-desplegable ul li {
   padding: 10px 15px;
-  font-size: 18px;
+  font-family: Dongle;
+  font-size: 52px;
   color: #333333;
   border-top: 1px;
   border-bottom: 1px;
@@ -121,10 +123,9 @@ header {
 /* estilos para el icono de cruz */
 .cerrar-menu {
   position: absolute;
-  top: 10px;
   right: 10px;
   cursor: pointer;
-  font-size: 24px;
+  font-size: 50px;
   color: #333333;
 }
 /* MENU HAMBRUGUESA*/

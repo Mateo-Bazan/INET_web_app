@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
     <link rel="stylesheet" href="{{ asset('/css/index-style.css') }}">
     <link rel="javaScript" href="{{ asset('/js/app.js') }}">
+    <script src="{{ asset('/js/userUbication.js') }}"></script>
 </head>
 <body class="col-12">
 
@@ -25,7 +26,12 @@
               <!-- FIN Icono de cruz --> 
               <!-- Datos Menu -->
                   <p class="titulo-desplegable">inet</p>
-                <ul>
+                <ul class="ul-desplegable">
+                  <style> 
+                  a {
+                    text-decoration: "none";
+                  }
+                  </style>
                   <li><a href="#">Tema</a></li>
                   <li><a href="#">Albergues</a></li>
                   <li><a href="#">Acerca De</a></li>
@@ -75,6 +81,7 @@
     <script src="{{ asset('/js/mapa.js') }}"></script>
 </Div>
 <script src="{{ asset('/js/desplegable.js') }}"></script>
+<script src="{{ asset('/js/userUbication.js') }}"></script>
 <!--SCRIPTS-->  
 </body>
 </html>
