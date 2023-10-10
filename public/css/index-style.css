@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
+
+/* menu */
+.titulo{
+    color: white;
+    text-align: right;
+    float: right;
+    margin-left: auto;
+    margin-top: 13px;
+} 
+
+.botonmenu{
+    text-align: left;
+    float: left;
+    margin-right: -2px;
+    margin-top: 3px;
+} 
+
+.titulo-menu{
+    font-size: 50px;
+} 
+
+ .header{
+    background-color: #0e68af;
+} 
+
+ .navbar-toggler{
+    border: none;
+    margin-bottom: 5px;
+}
+.navbar-toggler:focus{
+    outline: none;
+    box-shadow:none;
+} 
+.img-movil {
+    display: none; /* Muestra la imagen */
+}
+.texto-menu {
+    color: #ffffff; /* Cambia el color del texto a negro */
+    font-size: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .img-movil {
+        display: block; /* Muestra la imagen */
+    }
+    .texto-menu {
+        color: #000; /* Cambia el color del texto a negro */
+        font-size: 20px;
+    }
+}
+
+/* boton search */
+.boton{
+  background-color: #0e68af;
+  color: #ffffff;
+  border-radius: 20px;
+  border: #0e68af;
+
+}
+
+/* corte opacidad pal mapa
+.opaco {
+  opacity: 0.5;
+  transition: opacity 0.5s ease;
+} */
+
+/* filtros */
+.container {
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.dropdown {
+    display: inline-block;
+    justify-content: center;
+}
+
+.dropdown2 {
+    display: inline-block;
+    justify-content: center;
+}
+
+.dropbtn {
+    background-color: #0e68af;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 25px;
+}
+.form-dropdown-container .filtro {
+    width: 100%;
+}
+
+.dropbtn2 {
+    background-color: #0e68af;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.dropbtn:hover {
+    background-color: #ffffff;
+    color: #0e68af;
+    border: 2px solid #0e68af;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.dropbtn2:hover {
+    background-color: #ffffff;
+    color: #0e68af;
+    border: 2px solid #0e68af;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    white-space: nowrap;
+    overflow-x: auto;
+    width: 100%;
+}
+
+.dropdown-content2 {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    white-space: nowrap;
+    overflow-x: auto;
+    width: 100%;
+    left: 1px;
+}
+
+.dropdown-content a {
+    color: white;
+    margin: 2px;
+    background-color: #0e68af;
+    border-radius: 25px;
+    padding: 10px 14px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.dropdown-content a:hover {
+    background-color: white;
+    border: 2px solid #0e68af;
+    color: #0e68af;
+}
+
+.dropdown-content2 a {
+    color: white;
+    margin: 2px;
+    background-color: #0e68af;
+    border-radius: 25px;
+    padding: 10px 14px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.dropdown-content2 a:hover {
+    background-color: white;
+    border: 2px solid #0e68af;
+    color: #0e68af;
+}
+
+.show {
+    display: block;
+}
+
+/* mapa */
+.mapa-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    
+  }
+  
+  .contenedor-mapa {
+    pointer-events: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Asegura que esté sobre el fondo */
+  }
+  
+  .form-dropdown-container {
+    position: relative;
+    z-index: 2; /* Asegura que esté sobre el fondo */
+    padding: 25px  50px 0px 50px; /* Ajusta el espaciado según sea necesario */
+  }
+  
+  /* lista */
+  .lista {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2; /* Asegura que esté sobre el fondo */
+  }
+  
+  .menu {
+    background-color: #ffffff;
+      color: #0e68af;
+      border: 2px solid #0e68af;
+      border-top-left-radius: 22px;
+      border-top-right-radius: 22px;
+      padding: 1px 10px;
+      cursor: pointer;
+      width: 400px; /* Ancho del botón */
+      position: relative;
+      transition: 0.3s;
+  }
+  
+  .arrow {
+    display: inline-block;
+    margin-left: 7px;
+    margin-right: 7px;
+    transition: transform 0.3s;
+  }
+  
+  .options {
+    display: none;
+    bottom: 100%;
+    background-color:#0e68af;
+    border: 1px solid #0e68af;
+    border-top: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    list-style: none;
+    width: 400px; /* Ancho del menú desplegable igual al botón */
+  }
+  
+  .option {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    padding: 2px;
+    color: #ffffff;
+  }
+  
+  .square {
+    flex: 1;
+    width: 60px;
+    height: 60px;
+    background-color: gray;
+    margin: 10px;
+  }
+  
+  .divsito {
+    flex: 2;
+    text-align: left;
+  }
+  
+  .lista.active .menu {
+    background-color: #0e68af;
+    color: #ffffff;
+    border: 1px solid #0e68af;
+  }
+  
+  .lista.active .menu .arrow {
+    transform: rotate(180deg);
+    color: #ffffff;
+  }
+  
+  .lista.active .options {
+    display: block;
+    transition: 0.5s;
+  }
+  /*FINLISTA*/
